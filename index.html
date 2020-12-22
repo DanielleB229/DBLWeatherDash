@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href= "style.css">  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Font Awesome Icons</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Weather Dash Assignment </title>
+</head>
+<body>
+    
+    <div class="jumbotron text-center">
+        <h1>Dani's Weather Dash</h1>
+        <p>Here's Your Five Day Forecast</p> 
+      </div>
+
+    
+  <div class="container">
+      <div class="left-menu">
+
+            <h4>Search for by city:</h4>
+        <div id="form-group"> 
+
+            <input  type="text" placeholder="Enter a city..." id="city-search">
+            <button class="btn btn-primary" onclick="updateWeather($('#city-search').val())"><span class="fa fa-search"></span></button>
+        </div>
+        <div>
+            <ul id="search-history"> 
+               
+             </ul>
+
+        </div>
+         
+
+      </div>
+
+      <div class="row">
+        <div class="col-xl-12" id="header-main">
+            <h3><span  id= "main-date"></span> <span id="main-city-name"></span></h3>
+            <p>Icon: <img id= "main-icon"></p>
+            <p>Temp: <span id= "main-temp">80</span></p>
+            <p>Humdity: <span id= "main-humidity">80%</span></p>
+            <p>Wind Speed: <span id= "main-wind-speed">80%</span></p>
+            <p>UV Index: <span id= "main-uv-index">80%</span></p>
+        </div>
+    </div>
+   
+    <h3 class ="row"><div class="col-xl">5-Day Forecast</h3>
+
+    <div class="row"> 
+
+      <div class="col-sm">
+        <h3 class= "daily-date">December 19</h3>
+        <p>Icon: <img class= "daily-icon"></p>
+        <p>Temp: <span class= "daily-temp">80</span></p>
+        <p>Humdity: <span class= "daily-humidity">80%</span></p>
+      </div>
+      <div class="col-sm">
+        <h3 class= "daily-date">December 19</h3>
+        <p>Icon: <img class= "daily-icon"></p>
+        <p>Temp: <span class= "daily-temp">82</span></p>
+        <p>Humdity: <span class= "daily-humidity">80%</span></p>
+      </div>
+      <div class="col-sm">
+        <h3 class= "daily-date">December 22</h3>
+        <p>Icon: <img class= "daily-icon"></p>
+        <p>Temp: <span class= "daily-temp">84</span></p>
+        <p>Humdity: <span class= "daily-humidity">80%</span></p>
+      </div>
+      <div class="col-sm">
+        <h3 class= "daily-date">December 24</h3>
+        <p>Icon: <img class= "daily-icon"></p>
+        <p>Temp: <span class= "daily-temp">88</span></p>
+        <p>Humdity: <span class= "daily-humidity">80%</span></p>
+      </div>
+      <div class="col-sm">
+        <h3 class= "daily-date">December 25</h3>
+        <p>Icon: <img class= "daily-icon"></p>
+        <p>Temp: <span class= "daily-temp">89</span></p>
+        <p>Humdity: <span class= "daily-humidity">80%</span></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js" defer></script>
+</body>
+</html>
