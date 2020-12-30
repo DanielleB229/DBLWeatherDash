@@ -10,5 +10,25 @@
 }
 
 ul {
-    list-style-type:none; 
+    list-style-type:none;
+    background-color: rgb(206, 203, 203); 
 }
+.col-sm{
+    background-color: blue;
+   color: white;
+}
+#main-uv-index {
+    background-color: red;
+    text: white;
+    font-weight: bold;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:white;
+    color: white;
+    text-align: center;
+  }
