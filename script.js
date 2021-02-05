@@ -30,13 +30,7 @@ $.get( CURRENT_DAY_URL+API_KEY, function(data, status) {
     var uvURL = `http://api.openweathermap.org/data/2.5/uvi?lat=${lat}&lon=${lon}&appid=` + API_KEY;
     getUVData(uvURL); 
   })
-    .fail(function(err) {
-        _log(err); 
-      alert( "error" );
-    })
-    .always(function() {
-      //alert( "finished" );
-    });
+
 
 
     $.get( FIVE_DAY_URL+API_KEY, function(data, status) {
@@ -85,11 +79,10 @@ function getUVData(url){
 function addToLocalStorage(city){
     var cities = localStorage.getItem("cities"); 
     if (cities !== undefined && cities != null){
-        /// then we have existing cities 
-        // make sure we don't repeat 
+        
         var cities_arr = cities.split(",").map(x => x.toLowerCase()); 
         if (cities_arr.indexOf(city.toLowerCase()) == -1){
-            //means it does not exist... 
+            //if does not exist... 
             localStorage.setItem("cities",cities + "," + city); 
 
             $("#search-history").html(""); 
@@ -100,7 +93,7 @@ function addToLocalStorage(city){
             }
         }
     }else {
-        /// creating a new set of cites 
+        /// appending the cities
         localStorage.setItem("cities", city); 
         $("#search-history").append(`<li>${city}</li>`); 
     }
@@ -109,8 +102,8 @@ function addToLocalStorage(city){
 function populateExistings(){
     var cities = localStorage.getItem("cities"); 
     if (cities !== undefined && cities != null){
-        /// then we have existing cities 
-        // make sure we don't repeat 
+        /// then there are  existing cities 
+        // don't repeat 
         var cities_arr = cities.split(",").map(x => x.toLowerCase()); 
            $("#search-history").html(""); 
 
