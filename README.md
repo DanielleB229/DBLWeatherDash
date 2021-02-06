@@ -7,7 +7,7 @@ This application allows the user to  plan ahead for travel by retrieving weather
 * Application uses local storage to store persistent data.
 * Application features current and future weather conditions for any given city. 
 * Current weather conditions for the city include temperature, humidity, wind speed, and the UV index. 
-* Future wetaher condiitons for the city include a 5 day forecast with icon representation of the wetaher condiitons, temperature and humidity. 
+* Future wetaher condiitons for the city include a 5-day forecast with icon representation of the wetaher condiitons, temperature and humidity. 
 ## Setup/Installation Requirements
 * Clone this repository.
 * Open repository in your browser.
@@ -21,5 +21,5 @@ Please email me for further questions at danielle.latortue@gmail.com
 HTML
 CSS
 JavaScript
-## Contribution Guidlines 
+## Contribution Guidelines 
 Direct link to repository: https://github.com/DanielleB229/DBLWeatherDash
